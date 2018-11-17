@@ -48,20 +48,20 @@ void menu(int &elec){
 	
 	
 	do{
-		cout << endl <<"Elige una opción: " ;
+		cout << endl <<"Elige una opciÃ³n: " ;
 		cin >> elec;
 		if((elec<1) || (elec>6)){
-			cout << "Número erroneo" << endl << endl;
+			cout << "NÃºmero erroneo" << endl << endl;
 		}
 	}while((elec<1) || (elec>6));
 }
 int suma(){
 	
 	long n1, n2, total, total_f;
-	cout << "Introduce el primer número: " ;
+	cout << "Introduce el primer nÃºmero: " ;
 	cin >> n1;
 	
-	cout << "Introduce el segundo número: ";
+	cout << "Introduce el segundo nÃºmero: ";
 	cin >> n2;
 
 
@@ -70,7 +70,7 @@ int suma(){
 
 	do{
 		cout <<"Para detener el proceso escribe 0 " << endl;
-		cout << "Introduce el siguiente número: " ;
+		cout << "Introduce el siguiente nÃºmero: " ;
 		cin >> n2;
 		if(n2 != 0){
 			total_f = total + n2;
@@ -88,10 +88,10 @@ int suma(){
 int resta(){
 	
 	long n1, n2, total, total_f;
-	cout << "Introduce el primer número: " ;
+	cout << "Introduce el primer nÃºmero: " ;
 	cin >> n1;
 	
-	cout << "Introduce el segundo número: ";
+	cout << "Introduce el segundo nÃºmero: ";
 	cin >> n2;
 
 
@@ -100,7 +100,7 @@ int resta(){
 
 	do{
 		cout <<"Para detener el proceso escribe 0 " << endl;
-		cout << "Introduce el siguiente número: " ;
+		cout << "Introduce el siguiente nÃºmero: " ;
 		cin >> n2;
 		if(n2 != 0){
 			total_f = total - n2;
@@ -118,10 +118,10 @@ int resta(){
 int mult(){
 	
 	long n1, n2, total, total_f;
-	cout << "Introduce el primer número: " ;
+	cout << "Introduce el primer nÃºmero: " ;
 	cin >> n1;
 	
-	cout << "Introduce el segundo número: ";
+	cout << "Introduce el segundo nÃºmero: ";
 	cin >> n2;
 
 
@@ -130,7 +130,7 @@ int mult(){
 
 	do{
 		cout <<"Para detener el proceso escribe 0 " << endl;
-		cout << "Introduce el siguiente número: " ;
+		cout << "Introduce el siguiente nÃºmero: " ;
 		cin >> n2;
 		if(n2 != 0){
 			total_f = total * n2;
@@ -148,14 +148,14 @@ int mult(){
 int div(){
 	
 	float n1, n2, total, total_f;
-	cout << "Introduce el primer número: " ;
+	cout << "Introduce el primer nÃºmero: " ;
 	cin >> n1;
 	
 	do{
-		cout << "Introduce el segundo número(que no sea 0): ";
+		cout << "Introduce el segundo nÃºmero(que no sea 0): ";
 		cin >> n2;
 		if(n2 == 0){
-			cout << "Número erroneo" << endl;
+			cout << "NÃºmero erroneo" << endl;
 		}
 	}while(n2 == 0);	
 		
@@ -166,7 +166,7 @@ int div(){
 
 	do{
 		cout <<"Para detener el proceso escribe 0 " << endl;
-		cout << "Introduce el siguiente número: " ;
+		cout << "Introduce el siguiente nÃºmero: " ;
 		cin >> n2;
 		total_f = total/n2;
 		cout << total << " / " << n2 << " = " <<total_f << endl;
